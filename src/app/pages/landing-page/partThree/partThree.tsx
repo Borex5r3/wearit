@@ -5,8 +5,8 @@ export default function () {
     <div
       className={`min-w-[280px] h-[700px] flex flex-col bg-[url('/nike-background.png')] bg-contain bg-center justify-center`}
     >
-      <div className="flex flex-col space-y-[120px]">
-        <div className="flex flex-col items-center text-center space-y-[28px] bg-black py-[40px] border-y-[2px] px-[20px]">
+      <div className="flex flex-col space-y-[120px] items-center">
+        <div className="w-full flex flex-col items-center text-center space-y-[28px] bg-black py-[40px] border-y-[2px] px-[20px]">
           <p className="text-[20px] font-bold antialiased">
             Welcome to the ultimate destination for Nike enthusiasts!
           </p>
