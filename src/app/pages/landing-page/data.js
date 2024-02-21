@@ -1,4 +1,4 @@
-export const items = [
+export const partOneItems = [
     {
         textContent:
             "Explore endless style possibilities with our collection of trendy t-shirts!",
@@ -29,3 +29,33 @@ export const items = [
         focusedButton: false,
     },
 ];
+
+export const partTwoItems = [
+    {
+      imageSource: "/partTwoImage1.png",
+      imageWidth: 250,
+      imageHeight: 250,
+      borderOverImage: false,
+      borderOverImageDistance: 0,
+      borderUnderImage: true,
+      borderUnderImageDistance: 0,
+    },
+    {
+      imageSource: "/partTwoImage2.png",
+      imageWidth: 250,
+      imageHeight: 250,
+      borderOverImage: true,
+      borderOverImageDistance: 0,
+      borderUnderImage: false,
+      borderUnderImageDistance: 0,
+    },
+    {
+      imageSource: "/partTwoImage3.png",
+      imageWidth: 250,
+      imageHeight: 250,
+      borderOverImage: true,
+      borderOverImageDistance: 36,
+      borderUnderImage: true,
+      borderUnderImageDistance: 0,
+    }
+  ];

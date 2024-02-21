@@ -1,25 +1,15 @@
 "use client";
-import Item from "./item";
-import Test from "./test";
-import { items } from "./data";
+import PartOne from './partOne/partOne';
+import PartThree from './partThree/partThree';
+import PartTwo from './partTwo/partTwo';
 
 export default function () {
 
   return (
-    <div className="min-w-[280px] h-[1700px] bg-eggplant flex flex-col space-y-[32px] pt-[52px]">
-      {items.map((item, index) => {
-        const {
-          textContent,
-          buttonContent,
-          imageSource,
-          imageWidth,
-          imageHeight,
-          reverseButtonAndText,
-          focusedButton,
-        } = item;
-        console.log(item);
-        return <Item item={item} />;
-      })}
+    <div className="min-w-[280px] flex flex-col">
+      {/* <PartOne /> */}
+      {/* <PartTwo /> */}
+      <PartThree />
     </div>
   );
 }
