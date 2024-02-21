@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         eggplant: 'var(--eggplant-color)',
         greypayne: 'var(--grey-payne-color)',
+        tiffany_blue: 'var(--tiffany-blue-color)',
       }
     },
   },

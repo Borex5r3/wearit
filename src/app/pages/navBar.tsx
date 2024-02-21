@@ -28,7 +28,7 @@ export default function () {
       </div>
       {/* showSideBar */}
       <div
-        className={`fixed min-w-[280px] flex justify-center items-center top-0 right-0 left-0 bottom-0 bg-[#533747] duration-200 ${
+        className={`fixed z-50 min-w-[280px] flex justify-center items-center top-0 right-0 left-0 bottom-0 bg-[#533747] duration-200 ${
           showSideBar ? " scale-x-100" : "scale-x-0"
         } origin-left ease-in-out`}
       >
@@ -44,10 +44,10 @@ export default function () {
         </button>
         <div className="space-y-[80px] flex flex-col text-center text-[24px] font-light antialiased">
           <button>
-            <p className="hover:font-medium">Clothes</p>
+            <p className="">Clothes</p>
           </button>
           <button>
-            <p className="hover:font-medium">Shoes</p>
+            <p className="">Shoes</p>
           </button>
         </div>
       </div>

@@ -1,9 +1,40 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function () {
   const [emailInput, setEmailInput] = useState("");
-
+  const handleEmailInput = (e: any) => {
+    setEmailInput(e.target.value);
+  };
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+  const form = useRef<HTMLFormElement>(null);
+  const toastMessage = () => {
+    toast.success("Welcome aboard, WearIt fans ! 🚀", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: false,
+      progress: undefined,
+      theme: "light",
+    });
+  };
+  const onSubmit = (_data: any) => {
+    const data = form.current || null;
+    console.log(data);
+    toastMessage();
+    reset();
+    setEmailInput("");
+  };
   return (
     <div className="w-full h-[310px] pt-[40px] min-w-[280px] pb-[20px] px-[20px] space-y-[32px] flex flex-col items-center">
       <div className="flex flex-col space-y-[24px] text-center items-center w-full max-w-[300px]">
@@ -12,17 +43,37 @@ export default function () {
           We'll send you updates on our latest launches and more.
         </p>
         <form
-          onSubmit={() => console.log(emailInput)}
-          className="border border-white flex w-full items-center"
+          ref={form}
+          onSubmit={handleSubmit(onSubmit)}
+          className="relative border border-white flex w-full items-center"
         >
-          <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            className="bg-inherit mx-[12px] text-[12px] w-full outline-none"
-            onChange={(e) => setEmailInput(e.target.value)}
-          />
-          <button type="submit">
+          <div className="h-full w-full flex">
+            <input
+              {...register("email", {
+                required: "required",
+                pattern: {
+                  value: /\S+@\S+\.\S+/,
+                  message:
+                    "Please enter a valid email address in the format user@example.com.",
+                },
+              })}
+              type="email"
+              id="email"
+              placeholder="Email"
+              className="bg-inherit mx-[12px] text-[12px] w-full outline-none"
+              onChange={handleEmailInput}
+            />
+            <div
+              className={
+                errors.email
+                  ? `absolute bottom-[-36px] text-[8px] lg:text-[13px] text-[#e87c03] py-[6px] px-[3px] w-full text-start`
+                  : "hidden"
+              }
+            >
+              {String(errors.email?.message)}
+            </div>
+          </div>
+          <button type="submit" className="">
             <div className="bg-white flex p-[8px]">
               <Image
                 src="/right-arrow.png"
@@ -42,6 +93,7 @@ export default function () {
           <Image src="/linkedin.png" width={30} height={30} alt="linkedin" />
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
