@@ -1,4 +1,4 @@
-import { partTwoItems } from "../data";
+import { partTwoItems } from "../../data";
 import Item from "./item";
 
 export default function () {
