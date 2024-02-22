@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function () {
@@ -44,12 +45,12 @@ export default function () {
         </button>
         <div className="flex flex-col h-full justify-between py-[120px] text-center text-[24px] font-light antialiased">
           <div className="space-y-[80px] flex flex-col text-center text-[24px] font-light antialiased">
-            <button>
+            <Link href="/pages/clothes" onClick={print}>
               <p className="">Clothes</p>
-            </button>
-            <button>
+            </Link>
+            <Link href="/pages/shoes" onClick={print}>
               <p className="">Shoes</p>
-            </button>
+            </Link>
           </div>
           <button>Sign Out</button>
         </div>

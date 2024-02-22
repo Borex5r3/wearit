@@ -60,3 +60,171 @@ export const partTwoItems = [
   }
 ];
 export const filters = ['price low to high', 'price high to low'];
+
+const shoesItems = [
+  {
+    imageSource: "/air-force.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 0,
+  },
+  {
+    imageSource: "/air-force.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 1,
+  },
+  {
+    imageSource: "/air-force.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 2,
+  },
+  {
+    imageSource: "/air-force.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 3,
+  },
+  {
+    imageSource: "/air-force.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 4,
+  },
+  {
+    imageSource: "/air-force.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 5,
+  },
+  {
+    imageSource: "/air-force.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 6,
+  },
+  {
+    imageSource: "/air-force.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 7,
+  },
+  {
+    imageSource: "/air-force.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 8,
+  },
+];
+
+export const shoesCategory = {
+  title: "All Shoes",
+  category1: "Adidas",
+  category2: "Nike",
+  category3: "New Balance",
+  category4: "Vans",
+  items: shoesItems,
+};
+
+const clothesItems = [
+  {
+    imageSource: "/partTwoImage1.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 0,
+  },
+  {
+    imageSource: "/partTwoImage1.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 1,
+  },
+  {
+    imageSource: "/partTwoImage1.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 2,
+  },
+  {
+    imageSource: "/partTwoImage1.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 3,
+  },
+  {
+    imageSource: "/partTwoImage1.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 4,
+  },
+  {
+    imageSource: "/partTwoImage1.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 5,
+  },
+  {
+    imageSource: "/partTwoImage1.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 6,
+  },
+  {
+    imageSource: "/partTwoImage1.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 7,
+  },
+  {
+    imageSource: "/partTwoImage1.png",
+    imageWidth: 250,
+    imageHeight: 250,
+    title: "Nike Air Force 1 '07 trainers in triple white",
+    price: "109.95 $",
+    id: 8,
+  },
+];
+
+export const clothesCategory = {
+  title: "All Clothes",
+  category1: "T-Shirts",
+  category2: "Hoodies",
+  category3: "Jeans",
+  category4: "Jackets",
+  items: clothesItems,
+};
