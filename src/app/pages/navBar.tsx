@@ -42,13 +42,16 @@ export default function () {
             className="absolute top-[20px] right-[20px] hover:rotate-45 duration-200"
           ></Image>
         </button>
-        <div className="space-y-[80px] flex flex-col text-center text-[24px] font-light antialiased">
-          <button>
-            <p className="">Clothes</p>
-          </button>
-          <button>
-            <p className="">Shoes</p>
-          </button>
+        <div className="flex flex-col h-full justify-between py-[120px] text-center text-[24px] font-light antialiased">
+          <div className="space-y-[80px] flex flex-col text-center text-[24px] font-light antialiased">
+            <button>
+              <p className="">Clothes</p>
+            </button>
+            <button>
+              <p className="">Shoes</p>
+            </button>
+          </div>
+          <button>Sign Out</button>
         </div>
       </div>
     </div>
