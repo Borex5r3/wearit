@@ -52,7 +52,9 @@ export default function () {
               <p className="">Shoes</p>
             </Link>
           </div>
-          <button>Sign Out</button>
+          <Link href="/pages/sign-in" onClick={print}>
+            <p className="">Sign In</p>
+          </Link>
         </div>
       </div>
     </div>
