@@ -228,3 +228,44 @@ export const clothesCategory = {
   category4: "Jackets",
   items: clothesItems,
 };
+export const joinUsInputs = [
+  {
+    title: "email address :",
+    placeholder: "Email",
+    type: "email",
+    id: 0,
+  },
+  {
+    title: "first name :",
+    placeholder: "First Name",
+    type: "text",
+    id: 1,
+  },
+  {
+    title: "last name :",
+    placeholder: "Last Name",
+    type: "text",
+    id: 2,
+  },
+  {
+    title: "password :",
+    placeholder: "Password",
+    type: "password",
+    id: 3,
+  },
+];
+
+export const signInInputs = [
+  {
+    title: "email address :",
+    placeholder: "Email",
+    type: "email",
+    id: 0,
+  },
+  {
+    title: "password :",
+    placeholder: "Password",
+    type: "password",
+    id: 1,
+  },
+];

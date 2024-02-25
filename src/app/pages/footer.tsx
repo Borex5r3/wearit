@@ -5,10 +5,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function () {
-  const [emailInput, setEmailInput] = useState("");
-  const handleEmailInput = (e: any) => {
-    setEmailInput(e.target.value);
-  };
+  // const [emailInput, setEmailInput] = useState("");
+  // const handleEmailInput = (e: any) => {
+  //   setEmailInput(e.target.value);
+  // };
   const {
     register,
     handleSubmit,
@@ -30,10 +30,10 @@ export default function () {
   };
   const onSubmit = (_data: any) => {
     const data = form.current || null;
-    console.log(data);
+    console.dir(data);
     toastMessage();
     reset();
-    setEmailInput("");
+    // setEmailInput("");
   };
   return (
     <div className="w-full h-[310px] pt-[40px] min-w-[280px] pb-[20px] px-[20px] space-y-[32px] flex flex-col items-center">
@@ -61,7 +61,7 @@ export default function () {
               id="email"
               placeholder="Email"
               className="bg-inherit mx-[12px] text-[12px] w-full outline-none"
-              onChange={handleEmailInput}
+              // onChange={handleEmailInput}
             />
             <div
               className={

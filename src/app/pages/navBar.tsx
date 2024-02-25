@@ -19,13 +19,17 @@ export default function () {
             className=""
           ></Image>
         </button>
-        <p className="text-[20px] font-bold">WearIt</p>
-        <Image
-          src="/shopping-cart.png"
-          width={30}
-          height={30}
-          alt="shopping-cart"
-        ></Image>
+        <Link href={"/pages/landing-page"} className="text-[20px] font-bold">
+          WearIt
+        </Link>
+        <Link href={"/pages/cart"}>
+          <Image
+            src="/shopping-cart.png"
+            width={30}
+            height={30}
+            alt="shopping-cart"
+          ></Image>
+        </Link>
       </div>
       {/* showSideBar */}
       <div
