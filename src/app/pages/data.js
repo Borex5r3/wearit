@@ -239,19 +239,19 @@ export const joinUsInputs = [
     title: "first name :",
     placeholder: "First Name",
     type: "text",
-    id: 1,
+    id: 2,
   },
   {
     title: "last name :",
     placeholder: "Last Name",
     type: "text",
-    id: 2,
+    id: 3,
   },
   {
     title: "password :",
     placeholder: "Password",
     type: "password",
-    id: 3,
+    id: 1,
   },
 ];
 

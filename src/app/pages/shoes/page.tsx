@@ -1,5 +1,5 @@
 "use client";
-import Categories from "../categories";
+import Categories from "../../components/categories";
 import { shoesCategory } from "../data";
 
 export default function () {

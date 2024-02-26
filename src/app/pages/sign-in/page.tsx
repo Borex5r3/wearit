@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import InputContainer from "../inputContainer";
+import InputContainer from "../../components/inputContainer";
 import { signInInputs } from "../data";
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -9,10 +9,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function () {
-  const [emailInput, setEmailInput] = useState("");
-  const handleEmailInput = (e: any) => {
-    setEmailInput(e.target.value);
-  };
   const {
     register,
     handleSubmit,
@@ -25,7 +21,7 @@ export default function () {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
-      closeOnClick: true,
+      closeOnClick: false,
       pauseOnHover: false,
       draggable: false,
       progress: undefined,
@@ -37,7 +33,6 @@ export default function () {
     console.log(data);
     toastMessage();
     reset();
-    setEmailInput("");
   };
   return (
     <div className="bg-white text-greypayne flex flex-col items-center space-y-[32px] min-w-[280px] pb-[48px] min-h-[800px]">
@@ -63,7 +58,14 @@ export default function () {
       >
         <div className="w-full px-[20px] space-y-[20px] max-w-[525px]">
           {signInInputs.map((item) => {
-            return <InputContainer key={item.id} item={item} />;
+            return (
+              <InputContainer
+                key={item.id}
+                item={item}
+                register={register}
+                errors={errors}
+              />
+            );
           })}
         </div>
         {/* button */}

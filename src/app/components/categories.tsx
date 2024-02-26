@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { filters } from "./data";
+import { filters } from "../pages/data";
 import { useRef, useState } from "react";
 
 export default function ({ category }: { category: any }) {
