@@ -4,13 +4,10 @@ import { useState } from "react";
 
 export default function () {
   const [showSideBar, setShowSideBar] = useState(false);
-  const print = () => {
-    setShowSideBar(!showSideBar);
-  };
   return (
     <div className="min-w-[280px] bg-eggplant">
       <div className="flex justify-between px-[20px] py-[12px]">
-        <button onClick={print}>
+        <button onClick={() => setShowSideBar(!showSideBar)}>
           <Image
             src="/menu.png"
             width={25}
@@ -43,20 +40,29 @@ export default function () {
             width={20}
             height={20}
             alt="close"
-            onClick={print}
+            onClick={() => setShowSideBar(!showSideBar)}
             className="absolute top-[20px] right-[20px] hover:rotate-45 duration-200"
           ></Image>
         </button>
         <div className="flex flex-col h-full justify-between py-[120px] text-center text-[24px] font-light antialiased">
           <div className="space-y-[80px] flex flex-col text-center text-[24px] font-light antialiased">
-            <Link href="/pages/clothes" onClick={print}>
+            <Link
+              href="/pages/clothes"
+              onClick={() => setShowSideBar(!showSideBar)}
+            >
               <p className="">Clothes</p>
             </Link>
-            <Link href="/pages/shoes" onClick={print}>
+            <Link
+              href="/pages/shoes"
+              onClick={() => setShowSideBar(!showSideBar)}
+            >
               <p className="">Shoes</p>
             </Link>
           </div>
-          <Link href="/pages/sign-in" onClick={print}>
+          <Link
+            href="/pages/sign-in"
+            onClick={() => setShowSideBar(!showSideBar)}
+          >
             <p className="">Sign In</p>
           </Link>
         </div>
