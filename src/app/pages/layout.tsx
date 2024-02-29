@@ -3,6 +3,7 @@ import Footer from "@/app/pages/footer";
 import NavBarMobile from "@/app/pages/navBarMobile";
 import NavBarDesktop from "./navBarDesktop";
 import { useState } from "react";
+import FooterDesktop from "./footerDesktop";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [showProfileBar, setShowProfileBar] = useState(false);
@@ -16,7 +17,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       />
       <div className="flex-grow md:overflow-y-auto">
         {children}
-        <Footer />
+        {/* <Footer /> */}
+        <FooterDesktop />
       </div>
     </div>
   );

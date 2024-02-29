@@ -13,7 +13,7 @@ export default function ({
     console.log(e.clientX);
   };
   return (
-    <div className="min-w-[280px] bg-eggplant">
+    <div className="bg-eggplant">
       <div className="flex justify-between px-[200px] py-[16px] items-center h-full">
         <Link
           href={"/pages/landing-page"}

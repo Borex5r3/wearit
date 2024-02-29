@@ -1,6 +1,6 @@
 "use client";
 import Item from "./item";
-import { partOneItems } from "../../data";
+import { partOneItems } from "../../../data";
 
 export default function () {
   return (
