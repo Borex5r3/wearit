@@ -36,7 +36,7 @@ export default function () {
     // setEmailInput("");
   };
   return (
-    <div className="w-full h-[310px] pt-[40px] min-w-[280px] pb-[20px] px-[20px] space-y-[32px] flex flex-col items-center">
+    <div className="w-full h-[310px] pt-[40px] min-w-[280px] pb-[20px] px-[20px] space-y-[32px] flex flex-col items-center bg-black">
       <div className="flex flex-col space-y-[24px] text-center items-center w-full max-w-[300px]">
         <p className="font-bold text-[20px]">Sign up for our emails</p>
         <p className="font-light text-[10px]">

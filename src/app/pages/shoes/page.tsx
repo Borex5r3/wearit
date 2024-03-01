@@ -7,8 +7,14 @@ import CategoriesDesktop from "@/app/components/categoriesDesktop";
 
 export default function () {
   const { isBreakpoint } = useContext(BreakpointContext);
-  
+
   return (
-    <>{isBreakpoint ? <Categories category={shoesCategory} /> : <CategoriesDesktop category={shoesCategory} />}</>)
-  return <Categories category={shoesCategory} />;
+    <>
+      {isBreakpoint ? (
+        <Categories category={shoesCategory} />
+      ) : (
+        <CategoriesDesktop category={shoesCategory} />
+      )}
+    </>
+  );
 }

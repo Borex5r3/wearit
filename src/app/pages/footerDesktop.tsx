@@ -37,7 +37,7 @@ export default function () {
   };
   return (
     <div>
-      <div className="w-full h-[310px] flex justify-between items-end px-[200px] pb-[70px]">
+      <div className="w-full flex justify-between items-end px-[200px] pb-[70px] pt-[100px] bg-black">
         <div className="flex flex-col space-y-[24px] w-full max-w-[300px]">
           <p className="font-bold text-[24px]">Sign up for our emails</p>
           <p className="font-light text-[13px]">

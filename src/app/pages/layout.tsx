@@ -45,7 +45,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <BreakpointContext.Provider value={{ isBreakpoint: isBreakpoint }}>
-      <div className="flex h-screen flex-col">
+      <div className="flex h-screen flex-col text-white">
         {isBreakpoint ? (
           <NavBarMobile />
         ) : (
@@ -54,7 +54,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             setShowProfileBar={setShowProfileBar}
           />
         )}
-        <div className="flex-grow md:overflow-y-auto">
+        <div className="flex-grow md:overflow-y-auto bg-black">
           {children}
           {isBreakpoint ? <Footer /> : <FooterDesktop />}
         </div>
