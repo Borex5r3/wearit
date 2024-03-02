@@ -15,7 +15,7 @@ export default function ({ category }: { category: any }) {
     setItemsChunk(items.slice(0, nextElementsSize));
   };
   return (
-    <div className="flex flex-col items-center space-y-[52px] bg-white text-black py-[40px] px-[200px]">
+    <div className="flex flex-col items-center space-y-[100px] bg-white text-black py-[140px] px-[200px]">
       <p className="font-bold text-[80px] antialiased">{title}</p>
       <div className="flex font-bold text-[27px] antialiased text-center text-greypayne items-center justify-between w-full">
         <button>{category1}</button>
@@ -41,8 +41,8 @@ export default function ({ category }: { category: any }) {
         </div>
       </div>
       {/* items */}
-      <div className="space-y-[40px] flex flex-col items-center w-full">
-        <div className="grid grid-cols-5 gap-[108px] w-full mt-[100px]">
+      <div className="space-y-[80px] flex flex-col items-center w-full">
+        <div className="grid grid-cols-5 gap-[108px] w-full mt-[40px]">
           {itemsChunk.map((item: any) => {
             const { imageSource, imageWidth, imageHeight, title, price, id } =
               item;
