@@ -41,7 +41,6 @@ export const BreakpointContext = createContext({ isBreakpoint: false });
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [showProfileBar, setShowProfileBar] = useState(false);
   const isBreakpoint = useMediaQuery(1366);
-  console.log(isBreakpoint);
 
   return (
     <BreakpointContext.Provider value={{ isBreakpoint: isBreakpoint }}>
