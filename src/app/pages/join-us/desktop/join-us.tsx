@@ -18,7 +18,7 @@ export default function ({
   return (
     <div className="bg-eggplant text-greypayne flex flex-col items-center pb-[100px] pt-[40px] space-y-[40px]">
       <p className="text-white text-[100px] font-bold antialiased">WearIt</p>
-      <div className="flex flex-col max-w-[800px] w-full border px-[36px] space-y-[76px] bg-white pb-[200px] pt-[24px]">
+      <div className="flex flex-col max-w-[800px] w-full border px-[36px] space-y-[76px] bg-white pb-[200px] pt-[24px] h-[900px]">
         <div className="w-full flex">
           <Link
             href={"/pages/sign-in"}
