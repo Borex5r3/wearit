@@ -1,60 +1,22 @@
-"use client";
-import Image from "next/image";
-import InputContainer from "../../components/inputContainer";
-import { signInInputs } from "../data";
+import { ToastContainer } from "react-toastify";
 import Link from "next/link";
-import { useContext, useRef, useState } from "react";
-import { useForm } from "react-hook-form";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { BreakpointContext } from "../layout";
-import SignInMobile from "./mobile/sign-in";
-import SignInDesktop from "./desktop/sign-in";
+import InputContainer from "../../../components/inputContainer";
+import Image from "next/image";
+import { signInInputs } from "../../data";
 
-export default function () {
-  const { isBreakpoint } = useContext(BreakpointContext);
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm();
-  const form = useRef<HTMLFormElement>(null);
-  const toastMessage = () => {
-    toast.success("Welcome aboard, WearIt fans ! 🚀", {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: false,
-      pauseOnHover: false,
-      draggable: false,
-      progress: undefined,
-      theme: "light",
-    });
-  };
-  const onSubmit = (_data: any) => {
-    const data = form.current || null;
-    console.log(data);
-    toastMessage();
-    reset();
-  };
-  return isBreakpoint ? (
-    <SignInMobile
-      handleSubmit={handleSubmit}
-      onSubmit={onSubmit}
-      form={form}
-      register={register}
-      errors={errors}
-    />
-  ) : (
-    <SignInDesktop
-      handleSubmit={handleSubmit}
-      onSubmit={onSubmit}
-      form={form}
-      register={register}
-      errors={errors}
-    />
-  );
+export default function ({
+  handleSubmit,
+  onSubmit,
+  register,
+  form,
+  errors,
+}: {
+  handleSubmit: any;
+  onSubmit: any;
+  form: any;
+  register: any;
+  errors: any;
+}) {
   return (
     <div className="bg-white text-greypayne flex flex-col items-center space-y-[32px] min-w-[280px] pb-[48px] min-h-[800px]">
       <div className="w-full flex flex-col">

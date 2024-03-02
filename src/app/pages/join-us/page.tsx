@@ -1,10 +1,8 @@
 "use client";
-import InputContainer from "../../components/inputContainer";
-import Link from "next/link";
 import { joinUsInputs } from "../data";
 import { useForm } from "react-hook-form";
 import { useContext, useRef } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import JoinUsMobile from "./mobile/join-us";
 import JoinUsDesktop from "./desktop/join-us";
 import { BreakpointContext } from "../layout";
