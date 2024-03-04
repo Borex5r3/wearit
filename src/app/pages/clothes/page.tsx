@@ -2,7 +2,7 @@
 import CategoriesDesktop from "@/app/components/categoriesDesktop";
 import Categories from "../../components/categories";
 import { clothesCategory } from "../data";
-import { BreakpointContext } from "../layout";
+import { BreakpointContext } from "../../layout";
 import { useContext } from "react";
 
 export default function () {

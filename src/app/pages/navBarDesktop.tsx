@@ -16,7 +16,7 @@ export default function ({
     <div className="bg-eggplant">
       <div className="flex justify-between px-[200px] py-[16px] items-center h-full">
         <Link
-          href={"/pages/landing-page"}
+          href={"/"}
           className="text-[32px] font-bold antialiased"
         >
           WearIt

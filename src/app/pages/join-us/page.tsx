@@ -5,7 +5,7 @@ import { useContext, useRef } from "react";
 import { toast } from "react-toastify";
 import JoinUsMobile from "./mobile/join-us";
 import JoinUsDesktop from "./desktop/join-us";
-import { BreakpointContext } from "../layout";
+import { BreakpointContext } from "../../layout";
 
 export default function () {
   const { isBreakpoint } = useContext(BreakpointContext);

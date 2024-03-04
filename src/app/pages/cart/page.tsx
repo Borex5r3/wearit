@@ -2,7 +2,7 @@
 import Cart from "./mobile/cart";
 import CartDesktop from "./desktop/cart";
 import { useContext } from "react";
-import { BreakpointContext } from "../layout";
+import { BreakpointContext } from "../../layout";
 
 export default function () {
   const { isBreakpoint } = useContext(BreakpointContext);

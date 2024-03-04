@@ -2,7 +2,7 @@
 import ShopItem from "./mobile/shop-item";
 import ShopItemDesktop from "./desktop/shop-item";
 import { useContext } from "react";
-import { BreakpointContext } from "../layout";
+import { BreakpointContext } from "../../layout";
 
 export default function () {
   const { isBreakpoint } = useContext(BreakpointContext);

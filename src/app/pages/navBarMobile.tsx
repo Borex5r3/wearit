@@ -16,7 +16,7 @@ export default function () {
             className=""
           ></Image>
         </button>
-        <Link href={"/pages/landing-page"} className="text-[20px] font-bold">
+        <Link href={"/"} className="text-[20px] font-bold">
           WearIt
         </Link>
         <Link href={"/pages/cart"}>
