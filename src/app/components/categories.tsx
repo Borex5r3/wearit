@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { filters } from "../pages/data";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
-export default function ({ category }: { category: any }) {
+const Categories = ({ category }: { category: any }) => {
   const { title, category1, category2, category3, category4, items } = category;
   const [filterInput, setFilterInput] = useState("");
   const [itemsChunk, setItemsChunk] = useState(items.slice(0, 5));
@@ -13,7 +13,7 @@ export default function ({ category }: { category: any }) {
   const handleLoadMore = () => {
     const nextElementsSize = itemsChunk.length + 5;
     setItemsChunk(items.slice(0, nextElementsSize));
-  }
+  };
   return (
     <div className="min-w-[280px] flex flex-col items-center space-y-[52px] bg-white text-black py-[40px] ">
       <p className="font-bold text-[36px] antialiased">{title}</p>
@@ -46,7 +46,7 @@ export default function ({ category }: { category: any }) {
           {itemsChunk.map((item: any) => {
             const { imageSource, imageWidth, imageHeight, title, price, id } =
               item;
-              
+
             return (
               <div
                 className="min-w-[280px] flex flex-col space-y-[20px] items-center px-[28px]"
@@ -67,15 +67,17 @@ export default function ({ category }: { category: any }) {
           })}
         </div>
         {/* Load More */}
-        {
-          itemsChunk.length !== items.length &&
-          <button 
-          onClick={handleLoadMore}
-          className="w-[118px] h-[42px] bg-greypayne text-[11px] font-bold antialiased text-center text-white">
-          LOAD MORE
-        </button>
-        }
+        {itemsChunk.length !== items.length && (
+          <button
+            onClick={handleLoadMore}
+            className="w-[118px] h-[42px] bg-greypayne text-[11px] font-bold antialiased text-center text-white"
+          >
+            LOAD MORE
+          </button>
+        )}
       </div>
     </div>
   );
-}
+};
+
+export default Categories;

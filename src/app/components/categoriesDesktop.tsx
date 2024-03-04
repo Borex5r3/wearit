@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { filters } from "../pages/data";
 import { useRef, useState } from "react";
+import exp from "constants";
 
-export default function ({ category }: { category: any }) {
+const CategoriesDesktop = ({ category }: { category: any }) => {
   const { title, category1, category2, category3, category4, items } = category;
   const [filterInput, setFilterInput] = useState("");
   const [itemsChunk, setItemsChunk] = useState(items.slice(0, 5));
@@ -79,3 +80,5 @@ export default function ({ category }: { category: any }) {
     </div>
   );
 }
+
+export default CategoriesDesktop;

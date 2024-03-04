@@ -4,7 +4,7 @@ import ShopItemDesktop from "./desktop/shop-item";
 import { useContext } from "react";
 import { BreakpointContext } from "../../layout";
 
-export default function () {
+const ShopItemPage = () => {
   const { isBreakpoint } = useContext(BreakpointContext);
   const item = {
     title: "adidas Football Tiro 24 t-shirt in navy",
@@ -33,4 +33,6 @@ export default function () {
     <ShopItemDesktop item={item} />
   );
   // return <ShopItem item={item} />;
-}
+};
+
+export default ShopItemPage;

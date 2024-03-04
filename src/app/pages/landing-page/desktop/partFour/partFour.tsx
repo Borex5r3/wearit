@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function () {
+const PartFour = () => {
   return (
     <div className="h-[700px] bg-eggplant flex flex-col justify-evenly">
       <div className="h-[3px] w-full bg-white" />
@@ -16,4 +16,6 @@ export default function () {
       <div className="h-[3px] w-full bg-white" />
     </div>
   );
-}
+};
+
+export default PartFour;

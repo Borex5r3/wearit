@@ -1,4 +1,4 @@
-export default function ({
+const InputContainer = ({
   item,
   register,
   errors,
@@ -6,7 +6,7 @@ export default function ({
   item: any;
   register: any;
   errors: any;
-}) {
+}) => {
   const {
     title,
     placeholder,
@@ -74,3 +74,5 @@ export default function ({
     </div>
   );
 }
+
+export default InputContainer;

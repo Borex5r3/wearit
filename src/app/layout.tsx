@@ -1,5 +1,5 @@
 "use client";
-import Footer from "@/app/pages/footer";
+import Footer from "@/app/pages/footerMobile";
 import NavBarMobile from "@/app/pages/navBarMobile";
 import NavBarDesktop from "./pages/navBarDesktop";
 import {
@@ -37,7 +37,7 @@ const useMediaQuery = (width: any) => {
     }
 
     return () => media.removeListener(updateTarget);
-  }, []);
+  }, [updateTarget, width]);
 
   return targetReached;
 };

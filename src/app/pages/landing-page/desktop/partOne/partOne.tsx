@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-export default function () {
+const PartOne = () => {
   return (
     <div className="flex w-full px-[200px]">
       <div className="flex justify-between w-1/2 items-center">
@@ -62,3 +62,5 @@ export default function () {
     </div>
   );
 }
+
+export default PartOne;

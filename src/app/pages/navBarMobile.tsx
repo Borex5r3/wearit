@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function () {
+const NavBarMobile = () => {
   const [showSideBar, setShowSideBar] = useState(false);
   return (
     <div className="min-w-[280px] bg-eggplant">
@@ -69,4 +69,6 @@ export default function () {
       </div>
     </div>
   );
-}
+};
+
+export default NavBarMobile;

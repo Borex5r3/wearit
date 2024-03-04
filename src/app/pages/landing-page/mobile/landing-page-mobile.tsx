@@ -3,7 +3,7 @@ import PartOne from "./partOne/partOne";
 import PartThree from "./partThree/partThree";
 import PartTwo from "./partTwo/partTwo";
 
-export default function () {
+const LandingPage = () => {
   return (
     <div className="min-w-[280px] flex flex-col">
       <PartOne />
@@ -12,4 +12,6 @@ export default function () {
       <PartFour />
     </div>
   );
-}
+};
+
+export default LandingPage;

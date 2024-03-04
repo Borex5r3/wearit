@@ -2,23 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
-export default function ({
+const NavBarDesktop = ({
   showProfileBar,
   setShowProfileBar,
 }: {
   showProfileBar: boolean;
   setShowProfileBar: any;
-}) {
+}) => {
   const print = (e: any) => {
     console.log(e.clientX);
   };
   return (
     <div className="bg-eggplant">
       <div className="flex justify-between px-[200px] py-[16px] items-center h-full">
-        <Link
-          href={"/"}
-          className="text-[32px] font-bold antialiased"
-        >
+        <Link href={"/"} className="text-[32px] font-bold antialiased">
           WearIt
         </Link>
         <div className="flex space-x-[26px]">
@@ -90,4 +87,6 @@ export default function ({
       </div>
     </div>
   );
-}
+};
+
+export default NavBarDesktop;

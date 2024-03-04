@@ -5,7 +5,7 @@ import { shoesCategory } from "../data";
 import { BreakpointContext } from "../../layout";
 import CategoriesDesktop from "@/app/components/categoriesDesktop";
 
-export default function () {
+const Shoes =  () =>{
   const { isBreakpoint } = useContext(BreakpointContext);
 
   return (
@@ -18,3 +18,5 @@ export default function () {
     </>
   );
 }
+
+export default Shoes;

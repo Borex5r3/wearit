@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ({ item }: { item: any }) {
+const ItemContainer = ({ item }: { item: any }) => {
   const { title, price, imageSource, imageWidth, imageHeight, size, quantity } =
     item;
   return (
@@ -37,3 +37,5 @@ export default function ({ item }: { item: any }) {
     </div>
   );
 }
+
+export default ItemContainer;

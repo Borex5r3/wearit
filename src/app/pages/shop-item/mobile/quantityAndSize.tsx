@@ -1,4 +1,4 @@
-export default function () {
+const QuantityAndSize = () =>{
   const quantityOptions = ["1", "2", "3", "4", "5"];
   const sizeOptions = ["Select Size", "XS", "S", "M", "L", "XL", "2XL"];
 
@@ -43,3 +43,5 @@ export default function () {
     </div>
   );
 }
+
+export default QuantityAndSize;

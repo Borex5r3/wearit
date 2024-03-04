@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ({ item }: { item: any }) {
+const Item = ({ item }: { item: any }) => {
   const {
     imageSource,
     imageWidth,
@@ -11,7 +11,7 @@ export default function ({ item }: { item: any }) {
     borderUnderImageDistance,
   } = item;
   const styleBorderOver = borderOverImage
-    ? `border-t-[2px] border-black ${borderOverImageDistance && 'pt-[40px]'}`
+    ? `border-t-[2px] border-black ${borderOverImageDistance && "pt-[40px]"}`
     : "";
   const styleBorderUnder = borderUnderImage
     ? `border-b-[2px] border-black pb-[${borderUnderImageDistance}px]`
@@ -36,4 +36,6 @@ export default function ({ item }: { item: any }) {
       </button>
     </div>
   );
-}
+};
+
+export default Item;

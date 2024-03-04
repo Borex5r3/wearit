@@ -4,7 +4,7 @@ import PartOne from "./partOne/partOne";
 import PartThree from "./partThree/partThree";
 import PartTwo from "./partTwo/partTwo";
 
-export default function () {
+const LandingPage = ()  =>{
   return (
     <div className="flex flex-col bg-eggplant">
       <PartOne />
@@ -14,3 +14,5 @@ export default function () {
     </div>
   );
 }
+
+export default LandingPage;

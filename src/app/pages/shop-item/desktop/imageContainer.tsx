@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function ({ item }: { item: any }) {
+const ImageContainer = ({ item }: { item: any }) => {
   const { imageSource, imageWidthDesktop, imageHeightDesktop, imageIds } = item;
   const [targetImage, setTargetImage] = useState(imageSource);
 
@@ -36,4 +36,6 @@ export default function ({ item }: { item: any }) {
       </div>
     </div>
   );
-}
+};
+
+export default ImageContainer;

@@ -5,7 +5,7 @@ import { clothesCategory } from "../data";
 import { BreakpointContext } from "../../layout";
 import { useContext } from "react";
 
-export default function () {
+const ClothesPage =  () => {
   const { isBreakpoint } = useContext(BreakpointContext);
 
   return (
@@ -14,3 +14,5 @@ export default function () {
     // <LandingPageDesktop />
   );
 }
+
+export default ClothesPage;

@@ -1,4 +1,4 @@
-export default function ({ item }: { item: any }) {
+const ProductDetails = ({ item }: { item: any }) => {
   const { details } = item;
   return (
     <div className="flex flex-col text-greypayne pb-[16px] space-y-[20px]">
@@ -9,3 +9,5 @@ export default function ({ item }: { item: any }) {
     </div>
   );
 }
+
+export default ProductDetails;

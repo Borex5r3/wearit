@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ({
+const Item = ({
   item,
 }: {
   item: {
@@ -12,7 +12,7 @@ export default function ({
     reverseButtonAndText: boolean;
     focusedButton: boolean;
   };
-}) {
+}) => {
   const {
     textContent,
     buttonContent,
@@ -46,4 +46,6 @@ export default function ({
       />
     </div>
   );
-}
+};
+
+export default Item;

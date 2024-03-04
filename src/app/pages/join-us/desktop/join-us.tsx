@@ -2,7 +2,7 @@ import { ToastContainer } from "react-toastify";
 import Link from "next/link";
 import InputContainer from "../../../components/inputContainer";
 
-export default function ({
+const JoinUs = ({
   handleSubmit,
   onSubmit,
   joinUsInputs,
@@ -14,7 +14,7 @@ export default function ({
   joinUsInputs: any;
   register: any;
   errors: any;
-}) {
+}) => {
   return (
     <div className="bg-eggplant text-greypayne flex flex-col items-center pb-[100px] pt-[40px] space-y-[40px]">
       <p className="text-white text-[100px] font-bold antialiased">WearIt</p>
@@ -65,3 +65,5 @@ export default function ({
     </div>
   );
 }
+
+export default JoinUs;

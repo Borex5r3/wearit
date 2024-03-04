@@ -7,7 +7,7 @@ import JoinUsMobile from "./mobile/join-us";
 import JoinUsDesktop from "./desktop/join-us";
 import { BreakpointContext } from "../../layout";
 
-export default function () {
+const JoinUsPage = () => {
   const { isBreakpoint } = useContext(BreakpointContext);
   const {
     register,
@@ -52,3 +52,5 @@ export default function () {
     />
   );
 }
+
+export default JoinUsPage;

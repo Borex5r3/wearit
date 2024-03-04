@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function () {
+const PartThree = () => {
   return (
     <div
       className={`min-w-[280px] h-[700px] flex flex-col bg-[url('/nike-background.png')] bg-contain bg-center justify-center`}
@@ -29,3 +29,5 @@ export default function () {
     </div>
   );
 }
+
+export default PartThree;

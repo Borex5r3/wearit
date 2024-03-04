@@ -4,8 +4,10 @@ import LandingPageDesktop from "./pages/landing-page/desktop/landing-page-deskto
 import LandingPageMobile from "./pages/landing-page/mobile/landing-page-mobile";
 import { BreakpointContext } from "./layout";
 
-export default function () {
+const Home =  () => {
   const { isBreakpoint } = useContext(BreakpointContext);
 
   return isBreakpoint ? <LandingPageMobile /> : <LandingPageDesktop />;
 }
+
+export default Home;

@@ -1,6 +1,6 @@
 import ItemContainer from "./itemContainer";
 
-export default function ({ items }: { items: any }) {
+const Cart = ({ items }: { items: any }) => {
   return (
     <div className="flex flex-col bg-[#EEEEEE] px-[20px] py-[40px] text-black items-center space-y-[20px]">
       <p className=" uppercase text-[40px] font-bold text-center antialiased">
@@ -51,3 +51,5 @@ export default function ({ items }: { items: any }) {
     </div>
   );
 }
+
+export default Cart;

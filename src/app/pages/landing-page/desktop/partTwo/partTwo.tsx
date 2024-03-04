@@ -1,7 +1,7 @@
 import { partTwoItems } from "../../../data";
 import Item from "./item";
 
-export default function () {
+const PartTwo = () =>  {
   return (
     <div className="bg-white flex px-[200px] justify-between w-full h-[850px]">
       {partTwoItems.map((item, index) => {
@@ -10,3 +10,5 @@ export default function () {
     </div>
   );
 }
+
+export default PartTwo;

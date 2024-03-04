@@ -4,7 +4,7 @@ import InputContainer from "../../../components/inputContainer";
 import Image from "next/image";
 import { signInInputs } from "../../data";
 
-export default function ({
+const SignIn = ({
   handleSubmit,
   onSubmit,
   register,
@@ -16,7 +16,7 @@ export default function ({
   form: any;
   register: any;
   errors: any;
-}) {
+}) => {
   return (
     <div className="bg-white text-greypayne flex flex-col items-center space-y-[32px] min-w-[280px] pb-[48px] min-h-[800px]">
       <div className="w-full flex flex-col">
@@ -91,4 +91,6 @@ export default function ({
       <ToastContainer />
     </div>
   );
-}
+};
+
+export default SignIn;

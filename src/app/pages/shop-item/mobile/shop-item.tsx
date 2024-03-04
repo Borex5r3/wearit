@@ -2,7 +2,7 @@ import ImageContainer from "./imageContainer";
 import ProductDetails from "./productDetails";
 import QuantityAndSize from "./quantityAndSize";
 
-export default function ({ item }: { item: any }) {
+const ShopItem =  ({ item }: { item: any }) =>{
   const { title, price } = item;
 
   return (
@@ -30,3 +30,5 @@ export default function ({ item }: { item: any }) {
     </div>
   );
 }
+
+export default ShopItem;

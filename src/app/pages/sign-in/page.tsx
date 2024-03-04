@@ -7,7 +7,7 @@ import { BreakpointContext } from "../../layout";
 import SignInMobile from "./mobile/sign-in";
 import SignInDesktop from "./desktop/sign-in";
 
-export default function () {
+const SignInPage = () => {
   const { isBreakpoint } = useContext(BreakpointContext);
   const {
     register,
@@ -51,4 +51,6 @@ export default function () {
       errors={errors}
     />
   );
-}
+};
+
+export default SignInPage;

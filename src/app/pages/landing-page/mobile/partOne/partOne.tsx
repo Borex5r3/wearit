@@ -2,7 +2,7 @@
 import Item from "./item";
 import { partOneItems } from "../../../data";
 
-export default function () {
+const PartOne = () => {
   return (
     <div className="min-w-[280px] h-[1800px] bg-eggplant flex flex-col space-y-[32px] pt-[52px] pb-[20px]">
       {partOneItems.map((item, index) => {
@@ -11,3 +11,5 @@ export default function () {
     </div>
   );
 }
+
+export default PartOne;

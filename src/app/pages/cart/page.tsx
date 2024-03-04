@@ -4,7 +4,7 @@ import CartDesktop from "./desktop/cart";
 import { useContext } from "react";
 import { BreakpointContext } from "../../layout";
 
-export default function () {
+const CartPage =  () => {
   const { isBreakpoint } = useContext(BreakpointContext);
 
   const items = [
@@ -54,3 +54,5 @@ export default function () {
     <>{isBreakpoint ? <Cart items={items} /> : <CartDesktop items={items} />}</>
   );
 }
+
+export default CartPage;

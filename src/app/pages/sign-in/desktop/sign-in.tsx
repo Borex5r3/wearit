@@ -4,7 +4,7 @@ import InputContainer from "../../../components/inputContainer";
 import Image from "next/image";
 import { signInInputs } from "../../data";
 
-export default function ({
+const SignIn = ({
   handleSubmit,
   onSubmit,
   register,
@@ -16,7 +16,7 @@ export default function ({
   form: any;
   register: any;
   errors: any;
-}) {
+}) =>{
   return (
     <div className="bg-eggplant text-greypayne flex flex-col items-center pb-[100px] pt-[40px] space-y-[40px]">
       <p className="text-white text-[100px] font-bold antialiased">WearIt</p>
@@ -100,3 +100,5 @@ export default function ({
     </div>
   );
 }
+
+export default SignIn;
