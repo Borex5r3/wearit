@@ -3,7 +3,7 @@ import Item from "./item";
 
 const PartTwo = () =>  {
   return (
-    <div className="bg-white flex px-[200px] justify-between w-full h-[850px]">
+    <div className="bg-white flex px-[200px] justify-between w-full h-[580px]">
       {partTwoItems.map((item, index) => {
         return <Item item={item} key={index + 1} />;
       })}

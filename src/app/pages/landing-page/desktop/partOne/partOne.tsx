@@ -26,8 +26,8 @@ const PartOne = () => {
         <div className="flex items-center justify-between w-full">
           <Image
             src="/partOneImage2.png"
-            width={370}
-            height={370}
+            width={300}
+            height={300}
             alt="image"
             className=""
           />
@@ -52,8 +52,8 @@ const PartOne = () => {
           </div>
           <Image
             src="/partOneImage3.png"
-            width={700}
-            height={700}
+            width={500}
+            height={500}
             alt="image"
             className=""
           />

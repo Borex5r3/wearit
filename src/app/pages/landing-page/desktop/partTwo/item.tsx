@@ -10,7 +10,7 @@ const Item = ({ item }: { item: any }) => {
     <div
       className={` flex ${styleReverseContent} justify-between items-center  h-full`}
     >
-      <button className="text-[15px] font-bold antialiased text-center w-[190px] h-[50px] bg-eggplant">
+      <button className="text-[13px] font-bold antialiased text-center w-[150px] h-[40px] bg-eggplant">
         SHOP NOW
       </button>
       <div className={`w-full flex justify-center`}>

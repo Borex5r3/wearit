@@ -49,7 +49,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} style={{backgroundColor: 'black'}}>
         <BreakpointContext.Provider value={{ isBreakpoint: isBreakpoint }}>
           <div className="flex h-screen flex-col text-white">
             {isBreakpoint ? (
