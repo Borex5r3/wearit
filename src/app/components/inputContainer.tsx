@@ -60,7 +60,7 @@ const InputContainer = ({
         {...register(registerFirstParameter, registerObjectParameter)}
         placeholder={placeholder}
         type={type}
-        className="text-white text-[13px] font-medium antialiased py-[24px] px-[12px] outline-none bg-greypayne w-full"
+        className="text-white text-[13px] font-medium antialiased py-[12px] px-[12px] outline-none bg-greypayne w-full"
       />
       <div
         className={

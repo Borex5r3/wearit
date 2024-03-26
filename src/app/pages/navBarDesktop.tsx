@@ -21,13 +21,13 @@ const NavBarDesktop = ({
         <div className="flex space-x-[26px]">
           <Link
             href={"/pages/clothes"}
-            className="text-[20px] font-light antialiased px-[72px]"
+            className="text-[15px] font-light antialiased px-[72px]"
           >
             Clothes
           </Link>
           <Link
             href={"/pages/shoes"}
-            className="text-[20px] font-light antialiased px-[72px]"
+            className="text-[15px] font-light antialiased px-[72px]"
           >
             Shoes
           </Link>
