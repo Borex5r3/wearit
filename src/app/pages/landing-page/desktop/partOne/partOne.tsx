@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 const PartOne = () => {
   return (
@@ -13,9 +14,9 @@ const PartOne = () => {
           Discover the latest in modern fashion. Explore curated collections of
           clothing and footwear from top brands, curated just for you.
         </p>
-        <button className="px-[40px] py-[16px] bg-white text-black w-max antialiased font-medium">
+        <Link href={"/pages/clothes"} className="px-[40px] py-[16px] bg-white text-black w-max antialiased font-medium">
           Explore Now
-        </button>
+        </Link>
       </div>
       <Image
       src="/white-t-shirt.png"

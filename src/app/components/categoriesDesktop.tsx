@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { filters } from "../pages/data";
-import { useRef, useState } from "react";
-import exp from "constants";
+import { useState } from "react";
 
 const CategoriesDesktop = ({ category }: { category: any }) => {
   const { title, category1, category2, category3, category4, items } = category;
@@ -16,9 +15,9 @@ const CategoriesDesktop = ({ category }: { category: any }) => {
     setItemsChunk(items.slice(0, nextElementsSize));
   };
   return (
-    <div className="flex flex-col items-center space-y-[100px] bg-white text-black py-[140px] px-[200px]">
-      <p className="font-bold text-[80px] antialiased">{title}</p>
-      <div className="flex font-bold text-[27px] antialiased text-center text-greypayne items-center justify-between w-full">
+    <div className="flex flex-col items-center space-y-[20px] bg-white text-black py-[40px] px-[200px]">
+      <p className="font-bold text-[60px] antialiased">{title}</p>
+      <div className="flex font-bold text-[14px] antialiased text-center text-greypayne items-center justify-between w-full">
         <button>{category1}</button>
         <button>{category2}</button>
         <button>{category3}</button>
@@ -29,7 +28,7 @@ const CategoriesDesktop = ({ category }: { category: any }) => {
             onChange={handleFilterInput}
             name="filters"
             id="filters"
-            className="text-[13px] font-light outline-none antialiased border-b-[1px] border-greypayne py-[4px]"
+            className="text-[10px] font-light outline-none antialiased border-b-[1px] border-greypayne py-[4px]"
           >
             {filters.map((item, index) => {
               return (
@@ -60,8 +59,8 @@ const CategoriesDesktop = ({ category }: { category: any }) => {
                   alt={imageSource}
                 />
                 <div className="flex flex-col space-y-[28px] text-center">
-                  <p className="text-[20px] font-normal antialiased">{title}</p>
-                  <p className="text-[22px] font-bold antialiased">{price}</p>
+                  <p className="text-[16px] antialiased font-bold">{title}</p>
+                  <p className="text-[14px] font-normal antialiased">{price}</p>
                 </div>
               </div>
             );
@@ -71,7 +70,7 @@ const CategoriesDesktop = ({ category }: { category: any }) => {
         {itemsChunk.length !== items.length && (
           <button
             onClick={handleLoadMore}
-            className="w-[220px] h-[70px] bg-greypayne text-[15px] font-bold antialiased text-center text-white"
+            className="bg-greypayne text-[14px] font-bold antialiased text-center text-white py-[12px] px-[32px]"
           >
             LOAD MORE
           </button>
@@ -79,6 +78,6 @@ const CategoriesDesktop = ({ category }: { category: any }) => {
       </div>
     </div>
   );
-}
+};
 
 export default CategoriesDesktop;

@@ -1,7 +1,7 @@
 "use client";
-import Footer from "@/app/pages/footerMobile";
-import NavBarMobile from "@/app/pages/navBarMobile";
-import NavBarDesktop from "./pages/navBarDesktop";
+import Footer from "@/app/pages/footer/mobile/footerMobile";
+import NavBarMobile from "@/app/pages/navBar/mobile/navBarMobile";
+import NavBarDesktop from "./pages/navBar/desktop/navBarDesktop";
 import {
   createContext,
   useCallback,
@@ -9,7 +9,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import FooterDesktop from "./pages/footerDesktop";
+import FooterDesktop from "./pages/footer/desktop/footerDesktop";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
